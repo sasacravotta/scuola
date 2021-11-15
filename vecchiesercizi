@@ -1,0 +1,592 @@
+//Stampare i primi N numeri interi. 
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner n=new Scanner(System.in);
+		System.out.println(" inserisci numero interi ");
+		
+		int nu=n.nextInt();
+		for(int i=0; i<nu; i++ ){
+		    System.out.println (i);
+		}
+	}
+}
+
+// Stampare i numeri pari minori di N.  
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner n=new Scanner(System.in);
+		System.out.println(" inserisci quantita numeri  ");
+		
+		int nu=n.nextInt();
+		for(int i=0; i<nu; i++ ){
+		    if(i%2==0){
+		    System.out.println (i);
+		}
+	}
+}
+
+}
+
+//  Stampare i numeri pari minori di N in ordine decrescente. 
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner n=new Scanner(System.in);
+		System.out.println(" inserisci quantita numeri  ");
+		
+		int nu=n.nextInt();
+		for(int i=nu-2; i>1; i-- ){
+		    if(i%2==0){
+		    System.out.println (i);
+		}
+	}
+}
+
+}
+
+//   Stampare multipli di A minori di N.  
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner n=new Scanner(System.in);
+		System.out.println(" inserisci numero  ");
+		
+		int nu=n.nextInt();
+		
+		 Scanner a=new Scanner(System.in);
+		System.out.println(" inserisci numero a ");
+		
+		int mul=a.nextInt();
+		
+		for(int i=1; i<nu; i++){
+		    if(i%mul==0){
+		    System.out.println (i);
+		}
+	}
+}
+
+}
+
+//   Stampare i primi N multipli di un numero.  
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner n=new Scanner(System.in);
+		System.out.println(" inserisci numero  ");
+		
+		int nu=n.nextInt();
+		
+		 Scanner a=new Scanner(System.in);
+		System.out.println(" inserisci numero a ");
+		
+		int mul=a.nextInt();
+		int p=mul*nu;
+		
+		for(int i=nu; i<=p; i++){
+		    if(i%nu==0){
+		    System.out.println (i);
+		}
+	}
+}
+
+}
+
+6  Stampare i dieci numeri pari successivi al numero N.  
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner num=new Scanner(System.in);
+		System.out.println(" inserisci numero interi ");
+		
+		int n=num.nextInt();
+		
+		int s=n+20;
+		
+		for(int i=n+1; i<s; i++ ){
+		    
+		    if(i%2==0){
+	
+	    System.out.println(i);
+	
+		    }
+		}
+	}
+}
+
+
+
+7  Calcolare la somma dei primi N numeri naturali.  
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner nnum=new Scanner(System.in);
+		System.out.println(" quanti numeri vuoi inserire ");
+		
+		int nn=nnum.nextInt();
+		int i=0;
+		int somma=0;
+		
+		while(i<nn){
+		    Scanner num=new Scanner(System.in);
+		System.out.println(" inserisci numero ");
+		
+		int n=num.nextInt();
+		    somma=somma+n;
+		    i++;
+		    
+		}
+
+		System.out.println(" la somma e' "+somma);
+	
+	}
+}
+
+
+
+
+8  Dati N numeri effettuarne la somma.  
+9  Dati N numeri contare quanti sono i valori pari e quelli dispari.  
+10  Dati N numeri contare quanti sono i multipli di 3.  
+11  Dati N numeri contare quanti sono i multipli di A. 
+
+
+/*13 Determinare quanti numeri multipli di K sono compresi nell'intervallo [A..B] (estremi
+compresi).*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	     
+	     Scanner a = new Scanner(System.in); 
+	    System.out.println(" inserisci A ");
+	   int A = a.nextInt();
+
+	      Scanner b = new Scanner(System.in); 
+	    System.out.println(" inserisci B ");
+	   int B= b.nextInt();
+	
+	  Scanner k = new Scanner(System.in); 
+	    System.out.println(" inserisci K ");
+	   int K= k.nextInt();
+	   
+	   int m=0; // multipli
+	   for(int i=A; i<=B; i++){
+	       if(i%2==0){
+	           m++;
+	           
+	       }
+	   }
+	    System.out.println(" i multipli sono  "+ m);
+	}
+}
+/*14 Dati N numeri stampare la somma di quelli pari e di quelli dispari.*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	     
+	     int p=0;
+	     
+	     int d=0;
+	     
+	     Scanner n = new Scanner(System.in); 
+	    System.out.println(" inserisci quantita numeri da inserire ");
+	   int a = n.nextInt();
+
+	      
+	
+	   
+	   for(int i=0; i<a; i++){
+	    System.out.println(" inserisci numeri ");
+	   int b= n.nextInt();
+	   
+	       if(b%2==0){
+	           
+	          p=p+b;
+	           
+	       }else {
+	          
+	         d=d+b;
+	       }
+
+}
+
+	       System.out.println(" la somma dei numeri pari e " + p);
+	       System.out.println(" la somma dei numeri dispari e " + d);
+
+}
+}
+
+/*15 Determinare la somma dei numeri negativi e positivi di un insieme di N numeri relativi.*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	     
+	     int p=0;
+	     
+	     int d=0;
+	     
+	     Scanner n = new Scanner(System.in); 
+	    System.out.println(" inserisci quantita numeri da inserire ");
+	   int a = n.nextInt();
+
+	      
+	
+	   
+	   for(int i=0; i<a; i++){
+	    System.out.println(" inserisci numeri ");
+	   int b= n.nextInt();
+	   
+	       if(b<0){
+	           
+	          p=p+b;
+	           
+	       }else {
+	          
+	         d=d+b;
+	       }
+
+}
+
+	       System.out.println(" la somma dei numeri positivi e " + p);
+	       System.out.println(" la somma dei numeri negativi e " + d);
+
+}
+}
+
+/*16 Dati N numeri calcolare la media aritmetica.*/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	     
+	     int s=0;
+	     
+	     int m=0;
+	     
+	     Scanner n = new Scanner(System.in); 
+	    System.out.println(" inserisci quantita numeri da inserire ");
+	   int a = n.nextInt();
+
+	      
+	
+	   
+	   for(int i=0; i<a; i++){
+	    System.out.println(" inserisci numeri ");
+	   int b= n.nextInt();
+	   
+	       s=s+b;
+	       
+	       
+}
+        m=s/a;
+	       System.out.println(" la media artmetica e' " + m);
+	      
+}
+}
+
+/*17 Dati N numeri calcolare la media aritmetica dei valori pari e quella dei valori dispari.*/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	     
+	     int p=0;
+	     int mp=0;
+	     int ip=0;//contatore numeri pari
+	     
+	     int d=0;
+	     int md=0;
+	     int id=0;//contatore numeri dispari
+	     
+	     Scanner n = new Scanner(System.in); 
+	    System.out.println(" inserisci quantita numeri da inserire ");
+	   int a = n.nextInt();
+
+	      
+	
+	   
+	   for(int i=0; i<a; i++){
+	    System.out.println(" inserisci numeri ");
+	   int b= n.nextInt();
+	   
+	       if(b%2==0){
+	           
+	          p=p+b;
+	          ip++;
+	           
+	       }else {
+	          
+	         d=d+b;
+	         id++;
+	       }
+
+}
+        mp=p/ip;
+        
+        md=d/id;
+	       System.out.println(" la media dei numeri pari e " + mp);
+	       System.out.println(" la media dei numeri dispari e " + md);
+
+}
+}
+
+
+1)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=10;
+	    if((n%2)==0 ){
+		System.out.println(" pari ");
+	    }
+	    else
+	    {
+	      	System.out.println(" dispari ");  
+	    }
+	}
+}
+
+2)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=10;
+	    int a=5;
+	     if(n%a==0){
+		System.out.println(" divisibile ");
+	    }
+	    else
+	    {
+	      	System.out.println(" non divisibile ");  
+	    }
+
+	
+	}
+}
+
+3)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=15;
+	    int a=5;
+	    int b=3;
+	     if(n%a==0 && n%b==0){
+		System.out.println(" divisibile ");
+	    }
+	    else
+	    {
+	      	System.out.println(" non divisibile ");  
+	    }
+
+	
+	}
+}
+
+4)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=15;
+	    int a=7;
+	    int b=3;
+	     if(n%a==0 || n%b==0){
+		System.out.println(" divisibile ");
+	    }
+	    else
+	    {
+	      	System.out.println(" non divisibile ");  
+	    }
+
+	
+	}
+}
+
+5)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=9;
+	    int a=5;
+	    int b=3;
+	     if(n%a!=0 && n%b==0){
+		System.out.println(" divisibile ");
+	    }
+	    else
+	    {
+	      	System.out.println(" non divisibile ");  
+	    }
+
+	
+	}
+}
+
+6)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=10;
+	    int n2=12;
+	    if(n%2==0 && n2%2==0 ){
+		System.out.println(" entrambi sono pari ");
+	    }
+	    else
+	    {
+	      	System.out.println(" entrambi sono dispari ");  
+	    }
+	}
+}
+
+7)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=9;
+	    int a=5;
+	    int b=3;
+	     if(n%a!=0 && n%b==0){
+		System.out.println(" divisore");
+	    }
+	    else
+	    {
+	      	System.out.println(" non divisore ");  
+	    }
+
+	
+	}
+}
+
+8)
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=2;
+	    int a=3;
+	 
+	     if((a^n)%2==0){
+		System.out.println(" pari");
+	    }
+	    else
+	    {
+	      	System.out.println(" dispari ");  
+	    }
+
+	
+	}
+}
+
+9/Dato il numeratore e il denominatore di una frazione, stabilire se tale frazione è propria, impropria o apparente. 
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int numeratore=7;
+	    int denominatore=5;
+	    
+	    if (numeratore<denominatore)
+	    {
+	        System.out.println("La frazione "+numeratore+"/"+denominatore+" è propria.");
+	    }
+	    
+	    else if (numeratore>denominatore)
+	    {
+	       System.out.println("La frazione "+numeratore+"/"+denominatore+" è impropria.");
+	    }
+	    else 
+	    {
+	        System.out.println("La frazione "+numeratore+"/"+denominatore+" è apparente.");
+	    }
+	}
+}
+
+
+
+
+
+10//Dato due numeri interi, stabilire, senza effettuare calcolo, se la loro somma è pari o dispari.
+public class Main
+{
+	public static void main(String[] args) {
+	    int b=7;
+	    int a=3;
+	    
+	    if ((a%2==0 && b%2==0) || (a%2!=0 && b%2!=0))
+	    {
+	        System.out.println("La somma di "+a+" e "+b+" è pari."); 
+	    }
+	    
+	    else 
+	    {
+	     System.out.println("La somma di "+a+" e "+b+" non è pari.");   
+	    }
+	    
+	}
+}
+
+11//Data la base e l'esponente intero di una potenza, stabilire senza effettuare calcolo, il segno di tale potenza.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int a=-3;
+	    int n=3;
+	    
+	    if (a>0 || n%2==0)
+	    {
+	        System.out.println("Il risultato della potenza "+a+"^"+n+" sarà di segno positivo"); 
+	    }
+	    else 
+	    {
+	        System.out.println("Il risultato della potenza "+a+"^"+n+" sarà di segno negativo");   
+	    }
+	    
+	}
+}
+
+12 //Determinare se la potenza a^n è un numero pari (Senza effettuare l'operazione)
+
+//Data la base intera e l'esponente intero di una potenza, stabilire senza effettuare calcolo, il segno della potenza.
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int a=5;
+	    int n=6;
+	    
+	    if (a%2==0 || n%2==0)
+	    {
+	        System.out.println("L'espressione "+a+" elevato alla "+n+"^ darà un risultato pari");
+	    }
+	    
+	    else 
+	    {
+	      System.out.println("L'espressione "+a+" elevato alla "+n+"^ darà un risultato dispari");
+	    }
+	    
+	}
+}
+
+
+
